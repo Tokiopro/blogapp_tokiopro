@@ -18,8 +18,8 @@ class Article < ApplicationRecord
   validates :content, length: { minimum: 10 }
   validates :content, uniqueness: true
 
-  private
-  validate :validate_title_end_content_length
+  
+  validate :validate_title_and_content_length
 
 
   
